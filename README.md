@@ -1,8 +1,8 @@
 # Road Segment Analysis for ADAS (RS-ADAS)
 
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/input_video.gif" width="49%" style="margin-right: 2%;" />
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/output_video.gif" width="49%" />
+  <img src="https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/input_video.gif" width="49%" style="margin-right: 2%;" />
+  <img src="https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/output_video.gif" width="49%" />
 </p>
 
 
@@ -17,7 +17,7 @@ The project employs a two-stage process involving YOLOv8 for initial road detect
 - **Segment Anything Model (SAM)**: Provides high-fidelity segmentation of the detected road areas, separating them from other elements in the image.
 
 ## Project Workflow
-<img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/RS-SAM%20FLOWCHART.png" weight="20%">
+<img src="https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/RS-SAM%20FLOWCHART.png" weight="20%">
 
 - **Image Acquisition**: Images of various environments are first processed through the YOLOv8 object detection model.
 - **Road Detection**: YOLOv8 analyzes the images to detect the road and provides bounding boxes around the detected road area.
@@ -25,7 +25,7 @@ The project employs a two-stage process involving YOLOv8 for initial road detect
 - **Output**: The final output is a segmented image highlighting the road, ready for use by ADAS for navigation and decision-making.
 
 ## YOLOv8 Object Detection Architecture Overview
-![U-Net Architecture with VGG Backbone](https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/yolo.jpg)
+![U-Net Architecture with VGG Backbone](https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/yolo.jpg)
 This image illustrates the detailed architecture of the YOLOv8 object detection model. It is a comprehensive schematic that outlines the flow from input image to detected objects.
 
 ### Backbone Architecture
@@ -74,16 +74,16 @@ Upsampling Layers: These layers are utilized to merge feature maps from differen
 - **Callbacks**: Early Stopping with a patience of 12 epochs and model checkpointing to save the best-performing model iteration.
 
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/input_video.gif" width="49%" style="margin-right: 2%;" />
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/output_video_box.gif" width="49%" />
+  <img src="https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/input_video.gif" width="49%" style="margin-right: 2%;" />
+  <img src="https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/output_video_box.gif" width="49%" />
 </p>
 
 ## SAM Segmentation
 - The SAM model takes the detected road area and performs detailed segmentation, isolating the road with high precision.
 
 <p float="left">
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/output_video_box.gif" width="49%" style="margin-right: 2%;" />
-  <img src="https://github.com/AnanthaPadmanaban-KrishnaKumar/RS-SAM/blob/main/assets/output_video.gif" width="49%" />
+  <img src="https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/output_video_box.gif" width="49%" style="margin-right: 2%;" />
+  <img src="https://github.com/akash6murali/road-segment-anything-model/blob/main/assets/output_video.gif" width="49%" />
 </p>
 
 ## Key Features
